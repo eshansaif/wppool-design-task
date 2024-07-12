@@ -9,7 +9,7 @@ const WPPOOLIndex = () => {
     });
   };
   return (
-    <div className="relative bg-blue-900 text-white min-h-screen flex flex-col justify-center items-start pt-24">
+    <div className="relative max-w-full bg-blue-900 text-white min-h-screen flex flex-col justify-center items-start pt-24">
       <div className="absolute inset-0 bg-blue-900">
         <img
           src="index_bg.png"

@@ -6,11 +6,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div
-      className={`bg-gray-200 h-full mx-3 my-3 ${
-        isOpen ? "w-64" : "w-20"
-      } transition-all duration-300 shadow-lg`}
-    >
+    <div className="bg-gray-200 h-full mx-3 my-3 md:block hidden ">
       {/* <div className="flex justify-end p-2">
         <button className="text-gray-700" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <IoIosClose /> : <MdMenuOpen />}

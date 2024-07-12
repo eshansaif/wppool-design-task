@@ -50,9 +50,9 @@ const IndexChart = () => {
   const renderLegend = (props) => {
     const { payload } = props;
     return (
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4 flex-wrap">
         {payload.map((entry, index) => (
-          <div key={`item-${index}`} className="flex items-center mx-4">
+          <div key={`item-${index}`} className="flex items-center mx-2 my-1">
             <div
               style={{ backgroundColor: entry.color }}
               className="w-4 h-4 rounded-full mr-2"
@@ -70,7 +70,7 @@ const IndexChart = () => {
         <Sidebar />
         <main className="flex-1 bg-white p-6 rounded-lg shadow-md">
           <div className="text-left mb-6">
-            <h1 className="text-2xl md:text-3xl font-bold flex gap-2">
+            <h1 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
               <img
                 src="union.png"
                 alt="union image"
@@ -86,7 +86,7 @@ const IndexChart = () => {
               </span>
               <span className="text-[#191618]">
                 WPPOOL Index
-                <span className="ms-1 border border-r-[#FC714D] border-e-4"></span>
+                <span className="ml-1 border border-r-[#FC714D] border-e-4"></span>
               </span>
             </div>
             <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
@@ -95,7 +95,7 @@ const IndexChart = () => {
               </span>
               <span className="text-[#191618]">
                 Google Index
-                <span className="ms-1 border border-r-[#615DE3] border-e-4"></span>
+                <span className="ml-1 border border-r-[#615DE3] border-e-4"></span>
               </span>
             </div>
             <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
@@ -104,7 +104,7 @@ const IndexChart = () => {
               </span>
               <span className="text-[#191618]">
                 Microsoft
-                <span className="ms-1 border border-r-[#7CA63A] border-e-4"></span>
+                <span className="ml-1 border border-r-[#7CA63A] border-e-4"></span>
               </span>
             </div>
             <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
@@ -113,7 +113,7 @@ const IndexChart = () => {
               </span>
               <span className="text-[#191618]">
                 Twitter Index
-                <span className="ms-1 border border-r-[#6F34A1] border-e-4"></span>
+                <span className="ml-1 border border-r-[#6F34A1] border-e-4"></span>
               </span>
             </div>
           </div>
@@ -126,20 +126,20 @@ const IndexChart = () => {
                 Types of IPO <IoMdArrowDropdown />
               </button>
             </div>
-            <div className="flex justify-center mb-6 bg-[#EFF3F6] rounded-3xl">
-              <button className="text-[#748DA1] rounded px-4 py-2 mx-2">
+            <div className="flex justify-center mb-6 bg-[#EFF3F6] rounded-3xl p-2 flex-wrap">
+              <button className="text-[#748DA1] rounded px-4 py-2 mx-2 my-1">
                 1Y
               </button>
-              <button className="text-white bg-[#2042B6] rounded-3xl px-4 py-2 mx-2">
+              <button className="text-white bg-[#2042B6] rounded-3xl px-4 py-2 mx-2 my-1">
                 YTD
               </button>
-              <button className="text-[#748DA1] rounded px-4 py-2 mx-2">
+              <button className="text-[#748DA1] rounded px-4 py-2 mx-2 my-1">
                 6M
               </button>
-              <button className="text-[#748DA1] rounded px-4 py-2 mx-2">
+              <button className="text-[#748DA1] rounded px-4 py-2 mx-2 my-1">
                 1M
               </button>
-              <button className="text-[#748DA1] rounded px-4 py-2 mx-2">
+              <button className="text-[#748DA1] rounded px-4 py-2 mx-2 my-1">
                 1W
               </button>
             </div>
