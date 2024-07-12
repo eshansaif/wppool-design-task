@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoIosClose } from "react-icons/io";
+import { MdMenuOpen } from "react-icons/md";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -9,22 +11,27 @@ const Sidebar = () => {
         isOpen ? "w-64" : "w-20"
       } transition-all duration-300 shadow-lg`}
     >
-      <div className={`${isOpen ? "block" : "hidden"}`}>
+      {/* <div className="flex justify-end p-2">
+        <button className="text-gray-700" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <IoIosClose /> : <MdMenuOpen />}
+        </button>
+      </div> */}
+      <div className={`${isOpen ? "block" : "hidden"} md:block`}>
         <ul className="text-[#647888]">
-          <li className="p-2 mb-2 space-y-2 bg-[#2042B6] text-white rounded-md  flex justify-between items-center">
-            The Index <span>-</span>
+          <li className="p-2 mb-2 space-y-2 bg-[#2042B6] text-white rounded-md flex justify-between items-center">
+            The Index <span className="md:block hidden">-</span>
           </li>
           <li className="p-2 mb-2 hover:bg-[#2042B6] hover:text-white rounded-md flex justify-between items-center">
-            The Index Tab Two <span>+</span>
+            The Index Tab Two <span className="md:block hidden">+</span>
           </li>
           <li className="p-2 mb-2 hover:bg-[#2042B6] hover:text-white rounded-md flex justify-between items-center">
-            The Index Tab Three <span>+</span>
+            The Index Tab Three <span className="md:block hidden">+</span>
           </li>
           <li className="p-2 mb-2 hover:bg-[#2042B6] hover:text-white rounded-md flex justify-between items-center">
-            The Index Tab Four <span>+</span>
+            The Index Tab Four <span className="md:block hidden">+</span>
           </li>
           <li className="p-2 mb-2 hover:bg-[#2042B6] hover:text-white rounded-md flex justify-between items-center">
-            The Index Tab Five <span>+</span>
+            The Index Tab Five <span className="md:block hidden">+</span>
           </li>
         </ul>
       </div>

@@ -7,6 +7,7 @@ import StoriesAndIdeas from "./components/StoriesAndIdeas/StoriesAndIdeas";
 import AboutWppool from "./components/AboutWppool";
 import PortfolioCompanies from "./components/PortfolioCompanies";
 import Footer from "./components/Footer";
+import StateOfUsa from "./components/StateOfUsa/StateOfUsa";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <IndexChart />
       <Companies />
       <PotentialListings />
+      <StateOfUsa />
       <StoriesAndIdeas />
+      {/* <div className="h-[1px] w-full my-10 mx-10 bg-[#90B8F0]"></div> */}
       <AboutWppool />
       <PortfolioCompanies />
       <Footer />

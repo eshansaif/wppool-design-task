@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     <footer className="bg-[#E6E6E6] p-8 text-gray-800">
       <div className="max-w-screen-9xl mx-auto flex flex-col md:flex-row justify-between space-x-0 md:space-x-32">
-        <div className="md:w-1/3 w-full mb-8 md:mb-0">
-          <h2 className="text-2xl font-semibold mb-4">
+        <div className="md:w-1/3 w-full mb-8 md:mb-0 flex flex-col justify-between md:gap-y-32">
+          <h2 className="text-4xl font-normal mb-4">
             Experience remarkable WordPress products with a new level of power,
             beauty, and human-centered designs.
           </h2>
           <div>
-            <p className="text-xs text-gray-600">©2024</p>
-            <nav className="text-sm text-gray-600">
+            <p className="text-sm text-[#9FA0A1] ">©2024</p>
+            <nav className="text-sm text-[#9FA0A1] ">
               <a href="#" className="hover:underline mr-4">
                 Terms of Use
               </a>
@@ -19,7 +19,7 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </nav>
-            <p className="mt-4 text-xs text-gray-600 max-w-md">
+            <p className="mt-4  text-sm font-normal max-w-md">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -69,21 +69,24 @@ const Footer = () => {
 
         <div className="w-full md:w-1/3 flex flex-col justify-between">
           <div>
-            <h3 className="text-lg font-semibold mb-2">Cambridge</h3>
+            <h3 className="text-lg font-semibold">Cambridge</h3>
             <address className="not-italic">
               70728 Yost Burg,
               <br />
               North Magdaleneview, UT 97952-2814
             </address>
           </div>
+
+          <div className="h-[1px] w-64 my-5 bg-[#9FA0A1]"></div>
           <div>
-            <h3 className="text-lg font-semibold mb-2">London</h3>
+            <h3 className="text-lg font-semibold">London</h3>
             <address className="not-italic">
               Suite 292 903 Stehr Streets,
               <br />
               Langworthtown, SC 94577-9465
             </address>
           </div>
+          <div className="h-[1px] w-64 my-5 bg-[#9FA0A1]"></div>
           <div>
             <h3 className="text-lg font-semibold mb-2">San Francisco</h3>
             <address className="not-italic">
@@ -92,6 +95,7 @@ const Footer = () => {
               Lake Kendallville, Colorado - 97392, Bhutan
             </address>
           </div>
+          <div className="h-[1px] w-64 my-5 bg-[#9FA0A1]"></div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-gray-600 hover:text-gray-800">
               <img src="social/linkedin.png" alt="" />

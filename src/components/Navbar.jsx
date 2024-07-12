@@ -26,7 +26,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`fixed top-0 right-0 w-3/4 md:w-1/4 h-full rounded-lg bg-white text-[#191618] transform ${
+          className={`fixed top-0 right-0 w-3/4 md:w-1/4  rounded-lg bg-white text-[#191618] transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out`}
         >
@@ -65,13 +65,10 @@ const Navbar = () => {
             <li className="p-2">
               <a href="#portfolio">WPPOOL Portfolio Companies</a>
             </li>
-            <li className="p-2">
+            <li className="p-2 mt-4 text-blue-700">
               <a href="#visit">Visit WPPOOL</a>
             </li>
           </ul>
-          <button className="mt-4 bg-blue-700 text-white py-2 px-4 rounded mx-4">
-            Download the 2024 Report
-          </button>
         </div>
       </nav>
     </div>

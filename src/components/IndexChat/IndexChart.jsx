@@ -70,47 +70,59 @@ const IndexChart = () => {
         <Sidebar />
         <main className="flex-1 bg-white p-6 rounded-lg shadow-md">
           <div className="text-left mb-6">
-            <h1 className="text-3xl font-bold flex gap-2">
-              <img src="union.png" alt="union image" />
+            <h1 className="text-2xl md:text-3xl font-bold flex gap-2">
+              <img
+                src="union.png"
+                alt="union image"
+                className="w-6 h-6 md:w-8 md:h-8"
+              />
               The WPPOOL Index
             </h1>
           </div>
-          <div className="grid grid-cols-4 gap-4 text-center mb-6">
-            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex justify-between items-center">
-              <span className="text-[#FC714D] text-[30px]">+66.2%</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center mb-6">
+            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
+              <span className="text-[#FC714D] text-[20px] sm:text-[30px]">
+                +66.2%
+              </span>
               <span className="text-[#191618]">
                 WPPOOL Index
                 <span className="ms-1 border border-r-[#FC714D] border-e-4"></span>
               </span>
             </div>
-            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex justify-between items-center">
-              <span className="text-[#615DE3] text-[30px]">+26.6%</span>
+            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
+              <span className="text-[#615DE3] text-[20px] sm:text-[30px]">
+                +26.6%
+              </span>
               <span className="text-[#191618]">
                 Google Index
                 <span className="ms-1 border border-r-[#615DE3] border-e-4"></span>
               </span>
             </div>
-            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex justify-between items-center">
-              <span className="text-[#7CA63A] text-[30px]">+34.1%</span>
+            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
+              <span className="text-[#7CA63A] text-[20px] sm:text-[30px]">
+                +34.1%
+              </span>
               <span className="text-[#191618]">
                 Microsoft
                 <span className="ms-1 border border-r-[#7CA63A] border-e-4"></span>
               </span>
             </div>
-            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex justify-between items-center">
-              <span className="text-[#6F34A1] text-[30px]">+66.2%</span>
+            <div className="bg-[#F3F3F3] font-bold rounded-lg p-4 flex flex-col sm:flex-row justify-between items-center">
+              <span className="text-[#6F34A1] text-[20px] sm:text-[30px]">
+                +66.2%
+              </span>
               <span className="text-[#191618]">
                 Twitter Index
                 <span className="ms-1 border border-r-[#6F34A1] border-e-4"></span>
               </span>
             </div>
           </div>
-          <div className="flex justify-between items-center">
-            <div className="flex justify-center mb-6">
-              <button className="bg-[#2042B6] text-white rounded-3xl px-4 py-1 mx-2 flex justify-between items-center gap-3">
+          <div className="flex flex-col lg:flex-row justify-between items-center mb-6">
+            <div className="flex flex-wrap justify-center mb-6 lg:mb-0">
+              <button className="bg-[#2042B6] text-white rounded-3xl px-4 py-1 mx-2 flex items-center gap-3">
                 Sectors <IoMdArrowDropdown />
               </button>
-              <button className="bg-[#2042B6] text-white rounded-3xl px-4 py-1 mx-2 flex justify-between items-center gap-3">
+              <button className="bg-[#2042B6] text-white rounded-3xl px-4 py-1 mx-2 flex items-center gap-3">
                 Types of IPO <IoMdArrowDropdown />
               </button>
             </div>
